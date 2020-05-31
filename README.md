@@ -1,5 +1,5 @@
 # RescueTime-Screen
-A Flask app that queries RescueTime data and calculates daily screen time to create a screen with a running total. It queries RescueTime every minute.
+A Flask app that queries RescueTime data and calculates daily screen time to create a screen with a running total. It queries RescueTime every minute. With dark mode :crescent_moon:!
 
 ## Screenshots
 Light Mode             |  Dark Mode            | Example usage
