@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="60" />
+    <title>Screen Usage</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+      * {
+        cursor: none !important;
+      }
+      div.center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+      }
+      h1 {
+        font-size: 15em;
+        margin: 0;
+      }
+      h1 span {
+        position: relative;
+        top: -0.085em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <h1>{{ total|safe }}</h1>
+    </div>
+    <script>
+      let curTime = new Date();
+      const day = curTime.getDay();
+      curTime = parseInt(
+        curTime.getHours() +
+          "" +
+          ("0" + curTime.getMinutes()).substr(-2) +
+          "" +
+          ("0" + curTime.getSeconds()).substr(-2),
+      );
+      if (curTime > 190000) {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+      }
+    </script>
+  </body>
+</html>
