@@ -16,6 +16,7 @@ key = "<YOUR_KEY>"
 @app.route('/', methods=['POST', 'GET'])
 def display():
     # Get RescueTime data
+    jsondata = 0
     try:
         jsondata = requests.get("https://www.rescuetime.com/anapi/data?key=" + key).text
     except requests.ConnectionError:
