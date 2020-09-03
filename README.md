@@ -5,6 +5,10 @@ A Flask app that queries RescueTime data and calculates daily screen time to cre
 Light Mode             |  Dark Mode            | Example usage
 :---------------------:|:---------------------:|:-------------------------:
 ![](images/light.png)  |  ![](images/dark.png) | ![](images/example_usage.jpg)
+## Prerequisites
+- Python 3.6 or above
+- Pip(3)
+- A RescueTime account (free or premium)
 ## Installation
 1. [Clone](https://github.com/profwyattb/RescueTime-Screen/archive/master.zip) this repository
 1. Go to [RescueTime](https://www.rescuetime.com/anapi/manage) and create a new key
