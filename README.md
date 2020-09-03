@@ -7,7 +7,7 @@ Light Mode             |  Dark Mode            | Example usage
 ![](images/light.png)  |  ![](images/dark.png) | ![](images/example_usage.jpg)
 ## Prerequisites
 - Python 3.6 or above
-- Pip(3)
+- Pip package manager
 - A RescueTime account (free or premium)
 ## Installation
 1. [Clone](https://github.com/profwyattb/RescueTime-Screen/archive/master.zip) this repository
